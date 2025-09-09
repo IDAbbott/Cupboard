@@ -24,6 +24,164 @@
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.34574468085106386,
+            "y": 0.5635245901639344,
+            "uniqueID": "506e93f2-680b-4652-b1b5-fcec36f0795a",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "a0b05029-765d-4972-9ac3-8890a40908b2",
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 620,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.4804964539007093,
+            "y": 0.39959016393442626,
+            "uniqueID": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "506e93f2-680b-4652-b1b5-fcec36f0795a"
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": "00c3ad52-2a7a-4e79-a232-b8563ee33332"
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": "11ad3201-bfc2-47df-ae4c-0c3778655a27"
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.3466312056737589,
+            "y": 0.20491803278688525,
+            "uniqueID": "11ad3201-bfc2-47df-ae4c-0c3778655a27",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "00c3ad52-2a7a-4e79-a232-b8563ee33332",
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": -620,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Export",
+            "name": "Export",
+            "x": 0.5664893617021277,
+            "y": 0.6127049180327869,
+            "uniqueID": "791f17e1-85f0-4da9-918f-7396a9392d51",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
+                    "currentEquation": null
+                },
+                {
+                    "name": "File Type",
+                    "ioValue": "SVG",
+                    "currentEquation": null
+                },
+                {
+                    "name": "Resolution (dpi)",
+                    "ioValue": 96,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Cupboard",
+                    "currentEquation": null
+                }
+            ],
+            "description": "Export Atom, let's you choose a type of file to Export.",
+            "type": null,
+            "resolution": 96,
+            "importIndex": 0,
+            "partName": "Cupboard"
+        },
+        {
+            "atomType": "Gcode",
+            "name": "Gcode",
+            "x": 0.50177304964539,
+            "y": 0.7684426229508198,
+            "uniqueID": "dcb35006-cafa-4bba-bea4-5cb83c160591",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
+                    "currentEquation": null
+                },
+                {
+                    "name": "Tool Size",
+                    "ioValue": 6.35,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Passes",
+                    "ioValue": 1,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Speed",
+                    "ioValue": 1500,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Cut Through",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Cupboard",
+                    "currentEquation": null
+                }
+            ],
+            "description": "Generates Maslow gcode from the input geometry. For single parts, generates one gcode file. For assemblies, extracts individual parts, sorts them based on the selected direction (Left, Right, Top, or Bottom) using bounding boxes, generates gcode for each part sequentially, and concatenates the results into one file.",
+            "partName": "Cupboard",
+            "sortDirection": "Left"
+        },
+        {
             "atomType": "Molecule",
             "name": "side",
             "x": 0.14982269503546097,
@@ -62,8 +220,8 @@
                         },
                         {
                             "name": "y length",
-                            "ioValue": 450,
-                            "currentEquation": null
+                            "ioValue": 600,
+                            "currentEquation": "600"
                         }
                     ],
                     "description": "Creates a new rectangle."
@@ -83,7 +241,7 @@
                         {
                             "name": "y length",
                             "ioValue": 12,
-                            "currentEquation": "12"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Creates a new rectangle."
@@ -102,8 +260,8 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 250,
-                            "currentEquation": null
+                            "ioValue": 6,
+                            "currentEquation": "6"
                         },
                         {
                             "name": "yDist",
@@ -446,19 +604,19 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.12145390070921987,
-                    "y": 0.2336065573770492,
+                    "x": 0.11613475177304966,
+                    "y": 0.23975409836065573,
                     "uniqueID": "9db9370b-f220-4aa6-abbb-5d9c54f177c5",
                     "ioValues": [
                         {
                             "name": "x length",
                             "ioValue": 600,
-                            "currentEquation": "600"
+                            "currentEquation": null
                         },
                         {
                             "name": "y length",
-                            "ioValue": 440,
-                            "currentEquation": "440"
+                            "ioValue": 480,
+                            "currentEquation": "480"
                         }
                     ],
                     "description": "Creates a new rectangle."
@@ -478,7 +636,7 @@
                         {
                             "name": "y length",
                             "ioValue": 12,
-                            "currentEquation": "12"
+                            "currentEquation": null
                         }
                     ],
                     "description": "Creates a new rectangle."
@@ -498,12 +656,12 @@
                         {
                             "name": "xDist",
                             "ioValue": 250,
-                            "currentEquation": null
+                            "currentEquation": "250"
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 220,
-                            "currentEquation": null
+                            "ioValue": 250,
+                            "currentEquation": "250"
                         },
                         {
                             "name": "zDist",
@@ -532,8 +690,8 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -220,
-                            "currentEquation": null
+                            "ioValue": -250,
+                            "currentEquation": "-250"
                         },
                         {
                             "name": "zDist",
@@ -546,8 +704,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.29202127659574467,
-                    "y": 0.7860655737704918,
+                    "x": 0.29343971631205673,
+                    "y": 0.7684426229508198,
                     "uniqueID": "02dff33a-5138-4e89-bbb4-e793acbc6a41",
                     "ioValues": [
                         {
@@ -562,8 +720,8 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -220,
-                            "currentEquation": null
+                            "ioValue": -250,
+                            "currentEquation": "-250"
                         },
                         {
                             "name": "zDist",
@@ -576,8 +734,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.2937943262411348,
-                    "y": 0.6610655737704918,
+                    "x": 0.2898936170212766,
+                    "y": 0.6557377049180328,
                     "uniqueID": "7b987ad1-e317-4ded-90c6-9cfcef34809f",
                     "ioValues": [
                         {
@@ -592,8 +750,8 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -220,
-                            "currentEquation": null
+                            "ioValue": -250,
+                            "currentEquation": "-250"
                         },
                         {
                             "name": "zDist",
@@ -622,8 +780,8 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 220,
-                            "currentEquation": null
+                            "ioValue": 250,
+                            "currentEquation": "250"
                         },
                         {
                             "name": "zDist",
@@ -652,8 +810,8 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 220,
-                            "currentEquation": null
+                            "ioValue": 250,
+                            "currentEquation": "250"
                         },
                         {
                             "name": "zDist",
@@ -812,185 +970,9 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.34574468085106386,
-            "y": 0.5635245901639344,
-            "uniqueID": "506e93f2-680b-4652-b1b5-fcec36f0795a",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "a0b05029-765d-4972-9ac3-8890a40908b2",
-                    "currentEquation": null
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": 620,
-                    "currentEquation": "620"
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Assembly",
-            "name": "Assembly",
-            "x": 0.4804964539007093,
-            "y": 0.39959016393442626,
-            "uniqueID": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
-            "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": "506e93f2-680b-4652-b1b5-fcec36f0795a"
-                },
-                {
-                    "name": "Shape 2",
-                    "ioValue": "00c3ad52-2a7a-4e79-a232-b8563ee33332"
-                },
-                {
-                    "name": "Shape 3",
-                    "ioValue": "11ad3201-bfc2-47df-ae4c-0c3778655a27"
-                }
-            ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.3466312056737589,
-            "y": 0.20491803278688525,
-            "uniqueID": "11ad3201-bfc2-47df-ae4c-0c3778655a27",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "00c3ad52-2a7a-4e79-a232-b8563ee33332",
-                    "currentEquation": null
-                },
-                {
-                    "name": "xDist",
-                    "ioValue": -620,
-                    "currentEquation": "-620"
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Export",
-            "name": "Export",
-            "x": 0.5664893617021277,
-            "y": 0.6127049180327869,
-            "uniqueID": "791f17e1-85f0-4da9-918f-7396a9392d51",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
-                    "currentEquation": null
-                },
-                {
-                    "name": "File Type",
-                    "ioValue": "SVG",
-                    "currentEquation": null
-                },
-                {
-                    "name": "Resolution (dpi)",
-                    "ioValue": 96,
-                    "currentEquation": null
-                },
-                {
-                    "name": "Part Name",
-                    "ioValue": "Cupboard",
-                    "currentEquation": null
-                }
-            ],
-            "description": "Export Atom, let's you choose a type of file to Export.",
-            "type": null,
-            "resolution": 96,
-            "importIndex": 0,
-            "partName": "Cupboard"
-        },
-        {
-            "atomType": "Gcode",
-            "name": "Gcode",
-            "x": 0.50177304964539,
-            "y": 0.7684426229508198,
-            "uniqueID": "dcb35006-cafa-4bba-bea4-5cb83c160591",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
-                    "currentEquation": null
-                },
-                {
-                    "name": "Tool Size",
-                    "ioValue": 6.35,
-                    "currentEquation": null
-                },
-                {
-                    "name": "Passes",
-                    "ioValue": 1,
-                    "currentEquation": null
-                },
-                {
-                    "name": "Speed",
-                    "ioValue": 1500,
-                    "currentEquation": null
-                },
-                {
-                    "name": "Cut Through",
-                    "ioValue": 0,
-                    "currentEquation": null
-                },
-                {
-                    "name": "Part Name",
-                    "ioValue": "Cupboard",
-                    "currentEquation": null
-                }
-            ],
-            "description": "Generates Maslow gcode from the input geometry. For single parts, generates one gcode file. For assemblies, extracts individual parts, sorts them based on the selected direction (Left, Right, Top, or Bottom) using bounding boxes, generates gcode for each part sequentially, and concatenates the results into one file.",
-            "partName": "Cupboard",
-            "sortDirection": "Left"
         }
     ],
     "allConnectors": [
-        {
-            "ap1Name": "geometry or number",
-            "ap2Name": "Shape 2",
-            "ap1ID": "00c3ad52-2a7a-4e79-a232-b8563ee33332",
-            "ap2ID": "b116cdeb-2c0a-4120-942c-3b61137cd5d3"
-        },
-        {
-            "ap1Name": "geometry or number",
-            "ap2Name": "geometry",
-            "ap1ID": "00c3ad52-2a7a-4e79-a232-b8563ee33332",
-            "ap2ID": "11ad3201-bfc2-47df-ae4c-0c3778655a27"
-        },
-        {
-            "ap1Name": "geometry or number",
-            "ap2Name": "geometry",
-            "ap1ID": "a0b05029-765d-4972-9ac3-8890a40908b2",
-            "ap2ID": "506e93f2-680b-4652-b1b5-fcec36f0795a"
-        },
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 1",
@@ -1020,6 +1002,24 @@
             "ap2Name": "Shape 3",
             "ap1ID": "11ad3201-bfc2-47df-ae4c-0c3778655a27",
             "ap2ID": "b116cdeb-2c0a-4120-942c-3b61137cd5d3"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "Shape 2",
+            "ap1ID": "00c3ad52-2a7a-4e79-a232-b8563ee33332",
+            "ap2ID": "b116cdeb-2c0a-4120-942c-3b61137cd5d3"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": "00c3ad52-2a7a-4e79-a232-b8563ee33332",
+            "ap2ID": "11ad3201-bfc2-47df-ae4c-0c3778655a27"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": "a0b05029-765d-4972-9ac3-8890a40908b2",
+            "ap2ID": "506e93f2-680b-4652-b1b5-fcec36f0795a"
         }
     ],
     "unitsKey": "MM",
