@@ -19,7 +19,7 @@
         },
         {
             "atomType": "Molecule",
-            "name": "c_",
+            "name": "cupboard",
             "x": 0.14982269503546097,
             "y": 0.3401639344262295,
             "uniqueID": "00c3ad52-2a7a-4e79-a232-b8563ee33332",
@@ -33,14 +33,20 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "d2a9499f-ddc0-404f-84c4-7b962e2b3d6d",
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55",
+                            "currentEquation": null
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.14574468085106385,
-                    "y": 0.1262295081967213,
+                    "x": 0.12145390070921987,
+                    "y": 0.2336065573770492,
                     "uniqueID": "8af90a62-389b-4be3-a31a-7fd93bad9420",
                     "ioValues": [
                         {
@@ -396,6 +402,12 @@
                     "ap2Name": "geometry2",
                     "ap1ID": "3ef48551-d308-44c6-acd8-92170d99e638",
                     "ap2ID": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55"
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55",
+                    "ap2ID": "d2a9499f-ddc0-404f-84c4-7b962e2b3d6d"
                 }
             ],
             "fileTypeVersion": 1,
