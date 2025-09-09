@@ -7,10 +7,254 @@
     "ioValues": [],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": "5605044c-c45b-410d-8938-96cc24447d32",
+            "ioValues": [],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.09663120567375887,
+            "y": 0.3094262295081967,
+            "uniqueID": "b47aa282-7746-4d9f-9710-fdcb2bc8a7ef",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 600,
+                    "currentEquation": null
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 450,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.09042553191489362,
+            "y": 0.5348360655737705,
+            "uniqueID": "0455b055-d4e6-4aae-8dec-d3acce1947cc",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 40,
+                    "currentEquation": null
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 10,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.24202127659574466,
+            "y": 0.38524590163934425,
+            "uniqueID": "bcb87f43-336f-4b39-a000-8acacdadd42e",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "0455b055-d4e6-4aae-8dec-d3acce1947cc",
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 250,
+                    "currentEquation": "250"
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 220,
+                    "currentEquation": "220"
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.2455673758865248,
+            "y": 0.9364754098360655,
+            "uniqueID": "f33bff42-8f4d-4d3a-94cb-65b7a7f128d7",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "0455b055-d4e6-4aae-8dec-d3acce1947cc",
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 250,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 220,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.24202127659574466,
+            "y": 0.8360655737704918,
+            "uniqueID": "38a370cf-9fab-42ae-bb84-44f29c86d506",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "0455b055-d4e6-4aae-8dec-d3acce1947cc",
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 250,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 220,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.24379432624113476,
+            "y": 0.7110655737704918,
+            "uniqueID": "134b1954-1902-4539-80f2-3ee6e927b413",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "0455b055-d4e6-4aae-8dec-d3acce1947cc",
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 250,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 220,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.23758865248226949,
+            "y": 0.6024590163934426,
+            "uniqueID": "f7e76db9-c185-44ba-9a8b-7ee1d5d0047d",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "0455b055-d4e6-4aae-8dec-d3acce1947cc",
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 250,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 220,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.23847517730496454,
+            "y": 0.48975409836065575,
+            "uniqueID": "efd0e5dc-8812-469b-b639-7e7e9f1c4248",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "0455b055-d4e6-4aae-8dec-d3acce1947cc",
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 250,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 220,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "0455b055-d4e6-4aae-8dec-d3acce1947cc",
+            "ap2ID": "bcb87f43-336f-4b39-a000-8acacdadd42e"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "0455b055-d4e6-4aae-8dec-d3acce1947cc",
+            "ap2ID": "efd0e5dc-8812-469b-b639-7e7e9f1c4248"
+        },
+        null
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
