@@ -928,6 +928,48 @@
             "resolution": 96,
             "importIndex": 0,
             "partName": "Cupboard"
+        },
+        {
+            "atomType": "Gcode",
+            "name": "Gcode",
+            "x": 0.50177304964539,
+            "y": 0.7684426229508198,
+            "uniqueID": "dcb35006-cafa-4bba-bea4-5cb83c160591",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
+                    "currentEquation": null
+                },
+                {
+                    "name": "Tool Size",
+                    "ioValue": 6.35,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Passes",
+                    "ioValue": 1,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Speed",
+                    "ioValue": 1500,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Cut Through",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Part Name",
+                    "ioValue": "Cupboard",
+                    "currentEquation": null
+                }
+            ],
+            "description": "Generates Maslow gcode from the input geometry. For single parts, generates one gcode file. For assemblies, extracts individual parts, sorts them based on the selected direction (Left, Right, Top, or Bottom) using bounding boxes, generates gcode for each part sequentially, and concatenates the results into one file.",
+            "partName": "Cupboard",
+            "sortDirection": "Left"
         }
     ],
     "allConnectors": [
@@ -957,15 +999,21 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
+            "ap2Name": "geometry",
             "ap1ID": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
-            "ap2ID": "5605044c-c45b-410d-8938-96cc24447d32"
+            "ap2ID": "791f17e1-85f0-4da9-918f-7396a9392d51"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap1ID": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
-            "ap2ID": "791f17e1-85f0-4da9-918f-7396a9392d51"
+            "ap2ID": "dcb35006-cafa-4bba-bea4-5cb83c160591"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap1ID": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
+            "ap2ID": "5605044c-c45b-410d-8938-96cc24447d32"
         },
         {
             "ap1Name": "geometry",
