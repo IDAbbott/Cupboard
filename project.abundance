@@ -579,8 +579,8 @@
         {
             "atomType": "Molecule",
             "name": "back",
-            "x": 0.14804964539007093,
-            "y": 0.5471311475409836,
+            "x": 0.15159574468085107,
+            "y": 0.5430327868852459,
             "uniqueID": "a0b05029-765d-4972-9ac3-8890a40908b2",
             "ioValues": [],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -624,8 +624,8 @@
                 {
                     "atomType": "Rectangle",
                     "name": "Rectangle",
-                    "x": 0.13333333333333333,
-                    "y": 0.4827868852459017,
+                    "x": 0.11170212765957446,
+                    "y": 0.6311475409836065,
                     "uniqueID": "5cb7ae9b-972a-409a-aa85-356f1a9c6c57",
                     "ioValues": [
                         {
@@ -660,8 +660,8 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 250,
-                            "currentEquation": "250"
+                            "ioValue": 246,
+                            "currentEquation": "246"
                         },
                         {
                             "name": "zDist",
@@ -674,8 +674,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.2955673758865248,
-                    "y": 0.8864754098360654,
+                    "x": 0.2916666666666667,
+                    "y": 0.8852459016393444,
                     "uniqueID": "fd0aa2cb-29b2-4813-ae2b-f3237e59ea63",
                     "ioValues": [
                         {
@@ -690,8 +690,8 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -250,
-                            "currentEquation": "-250"
+                            "ioValue": -246,
+                            "currentEquation": "-246"
                         },
                         {
                             "name": "zDist",
@@ -720,8 +720,8 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -250,
-                            "currentEquation": "-250"
+                            "ioValue": -246,
+                            "currentEquation": "-246"
                         },
                         {
                             "name": "zDist",
@@ -745,13 +745,13 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 250,
-                            "currentEquation": null
+                            "ioValue": 259,
+                            "currentEquation": "259"
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -250,
-                            "currentEquation": "-250"
+                            "ioValue": -246,
+                            "currentEquation": "-246"
                         },
                         {
                             "name": "zDist",
@@ -780,8 +780,8 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 250,
-                            "currentEquation": "250"
+                            "ioValue": 246,
+                            "currentEquation": "246"
                         },
                         {
                             "name": "zDist",
@@ -810,8 +810,8 @@
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 250,
-                            "currentEquation": "250"
+                            "ioValue": 246,
+                            "currentEquation": "246"
                         },
                         {
                             "name": "zDist",
