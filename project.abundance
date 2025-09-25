@@ -893,8 +893,8 @@
                 {
                     "atomType": "Fusion",
                     "name": "Fusion",
-                    "x": 0.41436170212765955,
-                    "y": 0.5913934426229508,
+                    "x": 0.5767441860465117,
+                    "y": 0.7766393442622951,
                     "uniqueID": "622fd56d-3c90-4805-96c0-e0d148d63cb1",
                     "ioValues": [
                         {
@@ -1163,13 +1163,13 @@
                     "ioValues": [
                         {
                             "name": "x length",
-                            "ioValue": 10,
-                            "currentEquation": null
+                            "ioValue": 1145,
+                            "currentEquation": "1145"
                         },
                         {
                             "name": "y length",
-                            "ioValue": 10,
-                            "currentEquation": null
+                            "ioValue": 960,
+                            "currentEquation": "960"
                         }
                     ]
                 }
@@ -1264,12 +1264,6 @@
                     "ap2Name": "number or geometry",
                     "ap1ID": "c0c24335-74bb-4d3d-803d-abd7fa499b03",
                     "ap2ID": "8da8a303-8a1d-44f3-a849-aaa6445d22b0"
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap1ID": "0e06395e-1150-4b78-81f6-e16e181ae35f",
-                    "ap2ID": "2d47c06c-d52a-41d6-a444-233181966ac8"
                 }
             ],
             "fileTypeVersion": 1,
