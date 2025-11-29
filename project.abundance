@@ -139,8 +139,8 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 5,
-              "currentEquation": "5"
+              "ioValue": 10,
+              "currentEquation": "10"
             },
             {
               "name": "y length",
@@ -156,7 +156,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 265
+              "ioValue": 260
             },
             {
               "name": "yDist",
@@ -176,7 +176,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 0,
+              "ioValue": -260,
               "currentEquation": "0"
             },
             {
@@ -232,32 +232,28 @@
           "x": 0.2175732217573222,
           "y": 0.25888324873096447,
           "uniqueID": "id-221",
-          "name": "x / 2",
+          "name": "x / 2 - 5",
           "ioValues": [
             {
               "name": "x",
               "ioValue": 530
             }
           ],
-          "currentEquation": "x / 2"
+          "currentEquation": "x / 2 - 5"
         },
         {
           "atomType": "Equation",
           "x": 0.20669456066945605,
           "y": 0.375,
           "uniqueID": "id-228",
-          "name": "-x / 2 + y",
+          "name": "-x / 2 +5",
           "ioValues": [
             {
               "name": "x",
               "ioValue": 530
-            },
-            {
-              "name": "y",
-              "ioValue": 40
             }
           ],
-          "currentEquation": "-x / 2 + y"
+          "currentEquation": "-x / 2 +5"
         },
         {
           "atomType": "Extrude",
@@ -350,6 +346,11 @@
           "ap2Name": "xDist",
           "ap1ID": "id-221",
           "ap2ID": "6660d33e-72f6-4b07-96cb-e601efc5129f"
+        },
+        {
+          "ap2Name": "xDist",
+          "ap1ID": "id-228",
+          "ap2ID": "e5890891-c6c0-4e72-be44-57fc3fcadffb"
         },
         {
           "ap2Name": "geometry1",
