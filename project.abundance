@@ -147,17 +147,17 @@
         },
         {
           "atomType": "Move",
-          "x": 0.4652719665271966,
-          "y": 0.2122641509433962,
+          "x": 0.4635983263598326,
+          "y": 0.19811320754716982,
           "uniqueID": "6660d33e-72f6-4b07-96cb-e601efc5129f",
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 250
+              "ioValue": 225
             },
             {
               "name": "yDist",
-              "ioValue": 294
+              "ioValue": 233
             },
             {
               "name": "zDist",
@@ -233,11 +233,11 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 0
+              "ioValue": -225
             },
             {
               "name": "yDist",
-              "ioValue": 294
+              "ioValue": -233
             },
             {
               "name": "zDist",
@@ -257,7 +257,7 @@
             },
             {
               "name": "yDist",
-              "ioValue": 294
+              "ioValue": 233
             },
             {
               "name": "zDist",
@@ -340,7 +340,7 @@
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 1000
+              "ioValue": 480
             },
             {
               "name": "y",
@@ -358,7 +358,7 @@
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 1000
+              "ioValue": 480
             },
             {
               "name": "y",
@@ -387,22 +387,8 @@
         },
         {
           "atomType": "Equation",
-          "x": 0.2,
-          "y": 0.37971698113207547,
-          "uniqueID": "id-225",
-          "name": "x/2",
-          "ioValues": [
-            {
-              "name": "x",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "x/2"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.20251046025104602,
-          "y": 0.47641509433962265,
+          "x": 0.20669456066945605,
+          "y": 0.375,
           "uniqueID": "id-228",
           "name": "-x / 2 + y",
           "ioValues": [
@@ -500,6 +486,16 @@
           "ap2ID": "8af90a62-389b-4be3-a31a-7fd93bad9420"
         },
         {
+          "ap2Name": "x",
+          "ap1ID": "id-158",
+          "ap2ID": "id-221"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-158",
+          "ap2ID": "id-228"
+        },
+        {
           "ap2Name": "number or geometry",
           "ap1ID": "id-203",
           "ap2ID": "d2a9499f-ddc0-404f-84c4-7b962e2b3d6d"
@@ -508,6 +504,41 @@
           "ap2Name": "y length",
           "ap1ID": "id-210",
           "ap2ID": "8af90a62-389b-4be3-a31a-7fd93bad9420"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-210",
+          "ap2ID": "id-213"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-210",
+          "ap2ID": "id-217"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-213",
+          "ap2ID": "6660d33e-72f6-4b07-96cb-e601efc5129f"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-213",
+          "ap2ID": "e5890891-c6c0-4e72-be44-57fc3fcadffb"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-217",
+          "ap2ID": "2dce8324-3101-4c7a-a6a3-923fa32db2a4"
+        },
+        {
+          "ap2Name": "xDist",
+          "ap1ID": "id-221",
+          "ap2ID": "6660d33e-72f6-4b07-96cb-e601efc5129f"
+        },
+        {
+          "ap2Name": "xDist",
+          "ap1ID": "id-228",
+          "ap2ID": "2dce8324-3101-4c7a-a6a3-923fa32db2a4"
         }
       ],
       "fileTypeVersion": 1
