@@ -560,7 +560,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": -266
+              "ioValue": -259
             },
             {
               "name": "yDist",
@@ -574,13 +574,13 @@
         },
         {
           "atomType": "Move",
-          "x": 0.498744769874477,
-          "y": 0.5761421319796954,
+          "x": 0.4894096439837765,
+          "y": 0.5775401069518716,
           "uniqueID": "id-247",
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 264
+              "ioValue": 259
             },
             {
               "name": "yDist",
@@ -613,7 +613,7 @@
           "x": 0.18242677824267783,
           "y": 0.5913705583756346,
           "uniqueID": "id-249",
-          "name": "-x / 2 - y",
+          "name": "-x / 2 + y / 2",
           "ioValues": [
             {
               "name": "x",
@@ -621,17 +621,17 @@
             },
             {
               "name": "y",
-              "ioValue": 1
+              "ioValue": 12
             }
           ],
-          "currentEquation": "-x / 2 - y"
+          "currentEquation": "-x / 2 + y / 2"
         },
         {
           "atomType": "Equation",
           "x": 0.25020920502092053,
           "y": 0.44416243654822335,
           "uniqueID": "id-250",
-          "name": "x / 2 - y",
+          "name": "x / 2 - y/2",
           "ioValues": [
             {
               "name": "x",
@@ -639,10 +639,10 @@
             },
             {
               "name": "y",
-              "ioValue": 1
+              "ioValue": 12
             }
           ],
-          "currentEquation": "x / 2 - y"
+          "currentEquation": "x / 2 - y/2"
         },
         {
           "atomType": "Difference",
@@ -672,8 +672,8 @@
         },
         {
           "atomType": "Equation",
-          "x": 0.11213389121338911,
-          "y": 0.7411167512690355,
+          "x": 0.1369986480396575,
+          "y": 0.7344028520499108,
           "uniqueID": "id-305",
           "name": "x / 2",
           "ioValues": [
@@ -770,6 +770,16 @@
           "ap2Name": "height",
           "ap1ID": "id-293",
           "ap2ID": "id-174"
+        },
+        {
+          "ap2Name": "y",
+          "ap1ID": "id-293",
+          "ap2ID": "id-250"
+        },
+        {
+          "ap2Name": "y",
+          "ap1ID": "id-293",
+          "ap2ID": "id-249"
         },
         {
           "ap2Name": "geometry",
