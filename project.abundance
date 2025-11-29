@@ -498,17 +498,17 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.1196652719665272,
-          "y": 0.766497461928934,
+          "x": 0.11464435146443515,
+          "y": 0.8959390862944163,
           "uniqueID": "id-245",
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 10
+              "ioValue": 1000
             },
             {
               "name": "y length",
-              "ioValue": 1000
+              "ioValue": 10
             }
           ]
         },
@@ -520,7 +520,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": -505
+              "ioValue": -510
             },
             {
               "name": "yDist",
@@ -542,7 +542,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": -260
+              "ioValue": 9.5
             },
             {
               "name": "yDist",
@@ -576,7 +576,7 @@
           "x": 0.18242677824267783,
           "y": 0.5913705583756346,
           "uniqueID": "id-249",
-          "name": "-x / 2 - y/2",
+          "name": "-x / 2 - y",
           "ioValues": [
             {
               "name": "x",
@@ -587,25 +587,25 @@
               "ioValue": 10
             }
           ],
-          "currentEquation": "-x / 2 - y/2"
+          "currentEquation": "-x / 2 - y"
         },
         {
           "atomType": "Equation",
           "x": 0.18744769874476985,
           "y": 0.4416243654822335,
           "uniqueID": "id-250",
-          "name": "-x / 2 +y/2",
+          "name": "-x / 2 + y",
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 530
+              "ioValue": 1
             },
             {
               "name": "y",
               "ioValue": 10
             }
           ],
-          "currentEquation": "-x / 2 +y/2"
+          "currentEquation": "-x / 2 + y"
         },
         {
           "atomType": "Difference",
@@ -623,16 +623,30 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.2196652719665272,
-          "y": 0.766497461928934,
+          "x": 0.24602510460251042,
+          "y": 0.8756345177664975,
           "uniqueID": "id-301",
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 10,
+              "ioValue": 5,
               "currentEquation": "10"
             }
           ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.11213389121338911,
+          "y": 0.7411167512690355,
+          "uniqueID": "id-305",
+          "name": "x / 2",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 10
+            }
+          ],
+          "currentEquation": "x / 2"
         }
       ],
       "allConnectors": [
@@ -647,24 +661,19 @@
           "ap2ID": "9db9370b-f220-4aa6-abbb-5d9c54f177c5"
         },
         {
-          "ap2Name": "x",
-          "ap1ID": "id-161",
-          "ap2ID": "id-250"
-        },
-        {
           "ap2Name": "y length",
           "ap1ID": "id-167",
           "ap2ID": "9db9370b-f220-4aa6-abbb-5d9c54f177c5"
         },
         {
-          "ap2Name": "y length",
-          "ap1ID": "id-167",
-          "ap2ID": "id-245"
-        },
-        {
           "ap2Name": "x",
           "ap1ID": "id-167",
           "ap2ID": "id-249"
+        },
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-167",
+          "ap2ID": "id-245"
         },
         {
           "ap2Name": "geometry1",
@@ -717,6 +726,16 @@
           "ap2ID": "id-250"
         },
         {
+          "ap2Name": "x",
+          "ap1ID": "id-293",
+          "ap2ID": "id-305"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-293",
+          "ap2ID": "id-245"
+        },
+        {
           "ap2Name": "geometry",
           "ap1ID": "id-301",
           "ap2ID": "id-247"
@@ -725,6 +744,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-301",
           "ap2ID": "id-246"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-305",
+          "ap2ID": "id-301"
         }
       ],
       "fileTypeVersion": 1
