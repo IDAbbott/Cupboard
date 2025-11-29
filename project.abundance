@@ -7,7 +7,8 @@
   "ioValues": [
     {
       "name": "Height",
-      "ioValue": 530
+      "ioValue": 530,
+      "currentEquation": "530"
     },
     {
       "name": "Width",
@@ -19,8 +20,8 @@
     },
     {
       "name": "Thickness",
-      "ioValue": 30,
-      "currentEquation": "30"
+      "ioValue": 10,
+      "currentEquation": "10"
     }
   ],
   "topLevel": true,
@@ -158,7 +159,7 @@
         },
         {
           "name": "Thickness",
-          "ioValue": 30
+          "ioValue": 10
         }
       ],
       "topLevel": false,
@@ -193,7 +194,7 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 30
+              "ioValue": 10
             },
             {
               "name": "y length",
@@ -209,7 +210,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 250
+              "ioValue": 260
             },
             {
               "name": "yDist",
@@ -217,7 +218,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 15
+              "ioValue": 5
             }
           ]
         },
@@ -229,7 +230,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": -250
+              "ioValue": -260
             },
             {
               "name": "yDist",
@@ -237,7 +238,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 15
+              "ioValue": 5
             }
           ]
         },
@@ -292,7 +293,7 @@
             },
             {
               "name": "y",
-              "ioValue": 15
+              "ioValue": 5
             }
           ],
           "currentEquation": "x / 2 -  y"
@@ -310,7 +311,7 @@
             },
             {
               "name": "y",
-              "ioValue": 15
+              "ioValue": 5
             }
           ],
           "currentEquation": "-x / 2 + y"
@@ -323,7 +324,7 @@
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 30
+              "ioValue": 10
             }
           ]
         },
@@ -336,7 +337,7 @@
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 30
+              "ioValue": 10
             }
           ],
           "currentEquation": "x / 2"
@@ -349,7 +350,7 @@
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 15
+              "ioValue": 5
             }
           ]
         },
@@ -568,7 +569,7 @@
         },
         {
           "name": "Thickness",
-          "ioValue": 30
+          "ioValue": 10
         }
       ],
       "topLevel": false,
@@ -619,7 +620,7 @@
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 30
+              "ioValue": 10
             }
           ]
         },
@@ -631,7 +632,7 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 30
+              "ioValue": 10
             },
             {
               "name": "y length",
@@ -647,7 +648,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": -250
+              "ioValue": -260
             },
             {
               "name": "yDist",
@@ -655,7 +656,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 15
+              "ioValue": 5
             }
           ]
         },
@@ -667,7 +668,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 250
+              "ioValue": 260
             },
             {
               "name": "yDist",
@@ -675,7 +676,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 15
+              "ioValue": 5
             }
           ]
         },
@@ -708,7 +709,7 @@
             },
             {
               "name": "y",
-              "ioValue": 15
+              "ioValue": 5
             }
           ],
           "currentEquation": "-x / 2 + y"
@@ -726,7 +727,7 @@
             },
             {
               "name": "y",
-              "ioValue": 15
+              "ioValue": 5
             }
           ],
           "currentEquation": "x / 2 - y"
@@ -753,7 +754,7 @@
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 15
+              "ioValue": 5
             }
           ]
         },
@@ -766,7 +767,7 @@
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 30
+              "ioValue": 10
             }
           ],
           "currentEquation": "x / 2"
