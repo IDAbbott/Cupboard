@@ -37,11 +37,13 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 620
+          "ioValue": 0,
+          "currentEquation": "0"
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": 740,
+          "currentEquation": "0"
         },
         {
           "name": "zDist",
@@ -91,8 +93,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.13807531380753138,
-      "y": 0.32311320754716977,
+      "x": 0.2326359832635983,
+      "y": 0.17688679245283018,
       "uniqueID": "00c3ad52-2a7a-4e79-a232-b8563ee33332",
       "name": "side",
       "ioValues": [
@@ -572,8 +574,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.14560669456066944,
-      "y": 0.554245283018868,
+      "x": 0.2493723849372385,
+      "y": 0.35141509433962265,
       "uniqueID": "a0b05029-765d-4972-9ac3-8890a40908b2",
       "name": "back",
       "ioValues": [
@@ -1235,6 +1237,25 @@
       "uniqueID": "id-207",
       "name": "Depth",
       "type": "number"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.23347280334728032,
+      "y": 0.5731132075471698,
+      "uniqueID": "id-233",
+      "name": "x/2 + y/2",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 480
+        },
+        {
+          "name": "y",
+          "ioValue": 1000,
+          "currentEquation": "0"
+        }
+      ],
+      "currentEquation": "x/2 + y/2"
     }
   ],
   "allConnectors": [
@@ -1279,9 +1300,24 @@
       "ap2ID": "a0b05029-765d-4972-9ac3-8890a40908b2"
     },
     {
+      "ap2Name": "y",
+      "ap1ID": "id-164",
+      "ap2ID": "id-233"
+    },
+    {
       "ap2Name": "Depth",
       "ap1ID": "id-207",
       "ap2ID": "00c3ad52-2a7a-4e79-a232-b8563ee33332"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-207",
+      "ap2ID": "id-233"
+    },
+    {
+      "ap2Name": "yDist",
+      "ap1ID": "id-233",
+      "ap2ID": "506e93f2-680b-4652-b1b5-fcec36f0795a"
     }
   ],
   "unitsKey": "MM",
