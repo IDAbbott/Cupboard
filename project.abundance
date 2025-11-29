@@ -43,7 +43,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 740
+          "ioValue": 750
         },
         {
           "name": "zDist",
@@ -53,8 +53,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.4794952681388012,
-      "y": 0.37433155080213903,
+      "x": 0.46913023884632715,
+      "y": 0.3761140819964349,
       "uniqueID": "b116cdeb-2c0a-4120-942c-3b61137cd5d3",
       "ioValues": [
         {
@@ -120,7 +120,7 @@
       "x": 0.23347280334728032,
       "y": 0.5731132075471698,
       "uniqueID": "id-233",
-      "name": "x/2 + y/2",
+      "name": "x/2 + y/2 +10",
       "ioValues": [
         {
           "name": "x",
@@ -131,7 +131,7 @@
           "ioValue": 1000
         }
       ],
-      "currentEquation": "x/2 + y/2"
+      "currentEquation": "x/2 + y/2 +10"
     },
     {
       "atomType": "Input",
@@ -143,8 +143,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.2326359832635983,
-      "y": 0.17688679245283018,
+      "x": 0.22983325822442544,
+      "y": 0.1532976827094474,
       "uniqueID": "00c3ad52-2a7a-4e79-a232-b8563ee33332",
       "name": "side",
       "ioValues": [
@@ -209,7 +209,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 257.5
+              "ioValue": 250
             },
             {
               "name": "yDist",
@@ -284,7 +284,7 @@
           "x": 0.21586300135196032,
           "y": 0.3083778966131907,
           "uniqueID": "id-221",
-          "name": "x / 2 -  y / 2",
+          "name": "x / 2 -  y",
           "ioValues": [
             {
               "name": "x",
@@ -295,7 +295,7 @@
               "ioValue": 15
             }
           ],
-          "currentEquation": "x / 2 -  y / 2"
+          "currentEquation": "x / 2 -  y"
         },
         {
           "atomType": "Equation",
@@ -360,6 +360,30 @@
           "uniqueID": "id-434",
           "name": "Thickness",
           "type": "number"
+        },
+        {
+          "atomType": "Export",
+          "x": 0.73997296079315,
+          "y": 0.5115864527629234,
+          "uniqueID": "id-446",
+          "ioValues": [
+            {
+              "name": "File Type",
+              "ioValue": "STL"
+            },
+            {
+              "name": "Resolution (dpi)",
+              "ioValue": 96
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "side"
+            }
+          ],
+          "type": null,
+          "resolution": 96,
+          "importIndex": 0,
+          "partName": "side"
         }
       ],
       "allConnectors": [
@@ -387,6 +411,11 @@
           "ap2Name": "number or geometry",
           "ap1ID": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55",
           "ap2ID": "d2a9499f-ddc0-404f-84c4-7b962e2b3d6d"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55",
+          "ap2ID": "id-446"
         },
         {
           "ap2Name": "geometry2",
@@ -830,6 +859,24 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.16223524109959442,
+      "y": 0.7771836007130125,
+      "uniqueID": "id-437",
+      "name": "x + y",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 1000
+        },
+        {
+          "name": "y",
+          "ioValue": 480
+        }
+      ],
+      "currentEquation": "x + y"
     }
   ],
   "allConnectors": [
@@ -869,6 +916,11 @@
       "ap2ID": "id-233"
     },
     {
+      "ap2Name": "x",
+      "ap1ID": "id-164",
+      "ap2ID": "id-437"
+    },
+    {
       "ap2Name": "Depth",
       "ap1ID": "id-207",
       "ap2ID": "00c3ad52-2a7a-4e79-a232-b8563ee33332"
@@ -877,6 +929,11 @@
       "ap2Name": "x",
       "ap1ID": "id-207",
       "ap2ID": "id-233"
+    },
+    {
+      "ap2Name": "y",
+      "ap1ID": "id-207",
+      "ap2ID": "id-437"
     },
     {
       "ap2Name": "yDist",
