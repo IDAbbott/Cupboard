@@ -19,7 +19,8 @@
     },
     {
       "name": "Thickness",
-      "ioValue": 12
+      "ioValue": 30,
+      "currentEquation": "30"
     }
   ],
   "topLevel": true,
@@ -157,7 +158,7 @@
         },
         {
           "name": "Thickness",
-          "ioValue": 12
+          "ioValue": 30
         }
       ],
       "topLevel": false,
@@ -186,13 +187,13 @@
         },
         {
           "atomType": "Rectangle",
-          "x": 0.135196034249662,
-          "y": 0.7860962566844919,
+          "x": 0.07796304641730509,
+          "y": 0.7967914438502673,
           "uniqueID": "056842cb-12bb-4c75-b731-881c81b544c7",
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 10
+              "ioValue": 30
             },
             {
               "name": "y length",
@@ -202,13 +203,13 @@
         },
         {
           "atomType": "Move",
-          "x": 0.45941422594142256,
-          "y": 0.2487309644670051,
+          "x": 0.4610184767913475,
+          "y": 0.24420677361853835,
           "uniqueID": "6660d33e-72f6-4b07-96cb-e601efc5129f",
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 253
+              "ioValue": 235
             },
             {
               "name": "yDist",
@@ -216,7 +217,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 6
+              "ioValue": 15
             }
           ]
         },
@@ -228,7 +229,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": -253
+              "ioValue": -235
             },
             {
               "name": "yDist",
@@ -236,7 +237,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 6
+              "ioValue": 15
             }
           ]
         },
@@ -248,8 +249,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.6002703920684994,
-          "y": 0.6256684491978609,
+          "x": 0.6029743127534926,
+          "y": 0.6345811051693405,
           "uniqueID": "18c6805b-78fa-44d4-946e-8ec6c8f36e0f",
           "ioValues": [
             {
@@ -291,7 +292,7 @@
             },
             {
               "name": "y",
-              "ioValue": 12
+              "ioValue": 30
             }
           ],
           "currentEquation": "x / 2 -  y"
@@ -309,7 +310,7 @@
             },
             {
               "name": "y",
-              "ioValue": 12
+              "ioValue": 30
             }
           ],
           "currentEquation": "-x / 2 + y"
@@ -322,7 +323,7 @@
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 10
+              "ioValue": 30
             }
           ]
         },
@@ -335,20 +336,20 @@
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 12
+              "ioValue": 30
             }
           ],
           "currentEquation": "x / 2"
         },
         {
           "atomType": "Extrude",
-          "x": 0.2586750788643533,
-          "y": 0.8074866310160427,
+          "x": 0.24470482199188826,
+          "y": 0.7843137254901962,
           "uniqueID": "id-430",
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 12
+              "ioValue": 15
             }
           ]
         },
@@ -443,6 +444,11 @@
           "ap2ID": "6660d33e-72f6-4b07-96cb-e601efc5129f"
         },
         {
+          "ap2Name": "height",
+          "ap1ID": "id-286",
+          "ap2ID": "id-430"
+        },
+        {
           "ap2Name": "geometry",
           "ap1ID": "id-430",
           "ap2ID": "6660d33e-72f6-4b07-96cb-e601efc5129f"
@@ -468,9 +474,14 @@
           "ap2ID": "id-286"
         },
         {
+          "ap2Name": "x length",
+          "ap1ID": "id-434",
+          "ap2ID": "056842cb-12bb-4c75-b731-881c81b544c7"
+        },
+        {
           "ap2Name": "height",
           "ap1ID": "id-434",
-          "ap2ID": "id-430"
+          "ap2ID": "id-237"
         }
       ],
       "fileTypeVersion": 1
@@ -492,7 +503,7 @@
         },
         {
           "name": "Thickness",
-          "ioValue": 12
+          "ioValue": 30
         }
       ],
       "topLevel": false,
@@ -543,7 +554,7 @@
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 12
+              "ioValue": 30
             }
           ]
         },
@@ -555,7 +566,7 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 12
+              "ioValue": 30
             },
             {
               "name": "y length",
@@ -571,7 +582,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": -259
+              "ioValue": -250
             },
             {
               "name": "yDist",
@@ -579,7 +590,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 6
+              "ioValue": 15
             }
           ]
         },
@@ -591,7 +602,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 259
+              "ioValue": 250
             },
             {
               "name": "yDist",
@@ -599,7 +610,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 6
+              "ioValue": 15
             }
           ]
         },
@@ -632,7 +643,7 @@
             },
             {
               "name": "y",
-              "ioValue": 12
+              "ioValue": 30
             }
           ],
           "currentEquation": "-x / 2 + y / 2"
@@ -650,7 +661,7 @@
             },
             {
               "name": "y",
-              "ioValue": 12
+              "ioValue": 30
             }
           ],
           "currentEquation": "x / 2 - y/2"
@@ -677,7 +688,7 @@
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 6
+              "ioValue": 15
             }
           ]
         },
@@ -690,7 +701,7 @@
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 12
+              "ioValue": 30
             }
           ],
           "currentEquation": "x / 2"
