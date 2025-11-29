@@ -619,7 +619,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 0.5
+              "ioValue": 0
             },
             {
               "name": "yDist",
@@ -673,13 +673,13 @@
         },
         {
           "atomType": "Move",
-          "x": 0.3338912133891213,
-          "y": 0.44339622641509435,
+          "x": 0.33305439330543934,
+          "y": 0.4457547169811321,
           "uniqueID": "74045355-6733-4818-9bfd-d77f54b607ad",
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 0.5
+              "ioValue": 0
             },
             {
               "name": "yDist",
@@ -754,7 +754,7 @@
             {
               "name": "Shape 3",
               "ioValue": {
-                "geometry": "move-rectangle-40-12-0.5-493-0",
+                "geometry": "move-rectangle-40-12-0-493-0",
                 "dimension": "2D",
                 "plane": {
                   "origin": [
@@ -835,7 +835,7 @@
             {
               "name": "Shape 6",
               "ioValue": {
-                "geometry": "move-rectangle-40-12-0.5--493-0",
+                "geometry": "move-rectangle-40-12-0--493-0",
                 "dimension": "2D",
                 "plane": {
                   "origin": [
@@ -964,20 +964,6 @@
             }
           ],
           "currentEquation": "x / 2 - y"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.16652719665271967,
-          "y": 0.33490566037735847,
-          "uniqueID": "id-194",
-          "name": "x/2",
-          "ioValues": [
-            {
-              "name": "x",
-              "ioValue": 1
-            }
-          ],
-          "currentEquation": "x/2"
         },
         {
           "atomType": "Equation",
@@ -1154,16 +1140,6 @@
           "ap2Name": "xDist",
           "ap1ID": "id-190",
           "ap2ID": "7b987ad1-e317-4ded-90c6-9cfcef34809f"
-        },
-        {
-          "ap2Name": "xDist",
-          "ap1ID": "id-194",
-          "ap2ID": "74045355-6733-4818-9bfd-d77f54b607ad"
-        },
-        {
-          "ap2Name": "xDist",
-          "ap1ID": "id-194",
-          "ap2ID": "02dff33a-5138-4e89-bbb4-e793acbc6a41"
         },
         {
           "ap2Name": "xDist",
