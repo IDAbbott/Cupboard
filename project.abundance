@@ -526,8 +526,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.5464435146443515,
-          "y": 0.3984771573604061,
+          "x": 0.5488958990536278,
+          "y": 0.38859180035650626,
           "uniqueID": "id-174",
           "ioValues": [
             {
@@ -580,7 +580,7 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 253
+              "ioValue": 264
             },
             {
               "name": "yDist",
@@ -639,7 +639,7 @@
             },
             {
               "name": "y",
-              "ioValue": 12
+              "ioValue": 1
             }
           ],
           "currentEquation": "x / 2 - y"
@@ -770,11 +770,6 @@
           "ap2Name": "height",
           "ap1ID": "id-293",
           "ap2ID": "id-174"
-        },
-        {
-          "ap2Name": "y",
-          "ap1ID": "id-293",
-          "ap2ID": "id-250"
         },
         {
           "ap2Name": "geometry",
