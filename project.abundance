@@ -19,6 +19,10 @@
       "name": "Depth",
       "ioValue": 480,
       "currentEquation": "480"
+    },
+    {
+      "name": "Thickness",
+      "ioValue": 10
     }
   ],
   "topLevel": true,
@@ -105,6 +109,14 @@
         {
           "name": "Depth",
           "ioValue": 480
+        },
+        {
+          "name": "Thickness",
+          "ioValue": 10
+        },
+        {
+          "name": "Thickness (1)",
+          "ioValue": 10
         }
       ],
       "topLevel": false,
@@ -164,7 +176,8 @@
             },
             {
               "name": "zDist",
-              "ioValue": 0
+              "ioValue": 5,
+              "currentEquation": "10"
             }
           ]
         },
@@ -185,7 +198,8 @@
             },
             {
               "name": "zDist",
-              "ioValue": 0
+              "ioValue": 5,
+              "currentEquation": "10"
             }
           ]
         },
@@ -279,6 +293,36 @@
               "currentEquation": "5"
             }
           ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3076923076923077,
+          "uniqueID": "id-283",
+          "name": "Thickness",
+          "type": "number"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.16569037656903765,
+          "y": 0.467005076142132,
+          "uniqueID": "id-286",
+          "name": "x / 2",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 10
+            }
+          ],
+          "currentEquation": "x / 2"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.38461538461538464,
+          "uniqueID": "id-296",
+          "name": "Thickness (1)",
+          "type": "number"
         }
       ],
       "allConnectors": [
@@ -361,6 +405,21 @@
           "ap2Name": "geometry2",
           "ap1ID": "id-241",
           "ap2ID": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-283",
+          "ap2ID": "id-286"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-286",
+          "ap2ID": "e5890891-c6c0-4e72-be44-57fc3fcadffb"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-286",
+          "ap2ID": "6660d33e-72f6-4b07-96cb-e601efc5129f"
         }
       ],
       "fileTypeVersion": 1
@@ -379,6 +438,10 @@
         {
           "name": "Width",
           "ioValue": 1000
+        },
+        {
+          "name": "Thickness",
+          "ioValue": 10
         }
       ],
       "topLevel": false,
@@ -445,34 +508,36 @@
             },
             {
               "name": "y length",
-              "ioValue": 480
+              "ioValue": 1000
             }
           ]
         },
         {
           "atomType": "Move",
-          "x": 0.4861924686192468,
-          "y": 0.6218274111675127,
+          "x": 0.4887029288702929,
+          "y": 0.7918781725888325,
           "uniqueID": "id-246",
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 260
+              "ioValue": 4.5
             },
             {
               "name": "yDist",
-              "ioValue": 0
+              "ioValue": 0,
+              "currentEquation": "0"
             },
             {
               "name": "zDist",
-              "ioValue": 0
+              "ioValue": 10,
+              "currentEquation": "10"
             }
           ]
         },
         {
           "atomType": "Move",
-          "x": 0.4903765690376569,
-          "y": 0.8553299492385787,
+          "x": 0.498744769874477,
+          "y": 0.5761421319796954,
           "uniqueID": "id-247",
           "ioValues": [
             {
@@ -485,7 +550,8 @@
             },
             {
               "name": "zDist",
-              "ioValue": 0
+              "ioValue": 10,
+              "currentEquation": "10"
             }
           ]
         },
@@ -507,22 +573,26 @@
         },
         {
           "atomType": "Equation",
-          "x": 0.11380753138075314,
-          "y": 0.6065989847715736,
+          "x": 0.18242677824267783,
+          "y": 0.5913705583756346,
           "uniqueID": "id-249",
-          "name": "x / 2 - 5",
+          "name": "x / 2 - y/2",
           "ioValues": [
             {
               "name": "x",
-              "ioValue": 530
+              "ioValue": 10
+            },
+            {
+              "name": "y",
+              "ioValue": 1
             }
           ],
-          "currentEquation": "x / 2 - 5"
+          "currentEquation": "x / 2 - y/2"
         },
         {
           "atomType": "Equation",
-          "x": 0.11297071129707113,
-          "y": 0.44670050761421315,
+          "x": 0.18744769874476985,
+          "y": 0.4416243654822335,
           "uniqueID": "id-250",
           "name": "-x / 2 +5",
           "ioValues": [
@@ -550,6 +620,14 @@
           "x": 0.7958158995815899,
           "y": 0.4365482233502538,
           "uniqueID": "id-279"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.3076923076923077,
+          "uniqueID": "id-293",
+          "name": "Thickness",
+          "type": "number"
         }
       ],
       "allConnectors": [
@@ -564,9 +642,19 @@
           "ap2ID": "9db9370b-f220-4aa6-abbb-5d9c54f177c5"
         },
         {
+          "ap2Name": "x",
+          "ap1ID": "id-161",
+          "ap2ID": "id-250"
+        },
+        {
           "ap2Name": "y length",
           "ap1ID": "id-167",
           "ap2ID": "9db9370b-f220-4aa6-abbb-5d9c54f177c5"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-167",
+          "ap2ID": "id-245"
         },
         {
           "ap2Name": "geometry1",
@@ -617,6 +705,21 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-279",
           "ap2ID": "8da8a303-8a1d-44f3-a849-aaa6445d22b0"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-293",
+          "ap2ID": "id-247"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-293",
+          "ap2ID": "id-246"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-293",
+          "ap2ID": "id-249"
         }
       ],
       "fileTypeVersion": 1
@@ -663,6 +766,14 @@
         }
       ],
       "currentEquation": "x/2 + y/2"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.38116835994194487,
+      "uniqueID": "id-290",
+      "name": "Thickness",
+      "type": "number"
     }
   ],
   "allConnectors": [
@@ -725,6 +836,16 @@
       "ap2Name": "yDist",
       "ap1ID": "id-233",
       "ap2ID": "506e93f2-680b-4652-b1b5-fcec36f0795a"
+    },
+    {
+      "ap2Name": "Thickness",
+      "ap1ID": "id-290",
+      "ap2ID": "a0b05029-765d-4972-9ac3-8890a40908b2"
+    },
+    {
+      "ap2Name": "Thickness (1)",
+      "ap1ID": "id-290",
+      "ap2ID": "00c3ad52-2a7a-4e79-a232-b8563ee33332"
     }
   ],
   "unitsKey": "MM",
