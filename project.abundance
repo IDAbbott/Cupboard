@@ -464,17 +464,19 @@
         },
         {
           "atomType": "Move",
-          "x": 0.33209302325581397,
-          "y": 0.5368852459016393,
+          "x": 0.33305439330543934,
+          "y": 0.47641509433962265,
           "uniqueID": "c36e003a-c695-47c1-8864-4e9351359573",
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 250
+              "ioValue": 240,
+              "currentEquation": "240"
             },
             {
               "name": "yDist",
-              "ioValue": 246
+              "ioValue": 488,
+              "currentEquation": "488"
             },
             {
               "name": "zDist",
@@ -618,7 +620,7 @@
             {
               "name": "Shape 2",
               "ioValue": {
-                "geometry": "move-rectangle-40-12-250-246-0",
+                "geometry": "move-rectangle-40-12-240-488-0",
                 "dimension": "2D",
                 "plane": {
                   "origin": [
@@ -754,69 +756,6 @@
           "unionType": "Fusion"
         },
         {
-          "atomType": "Fusion",
-          "x": 0.6552301255230126,
-          "y": 0.3443396226415094,
-          "uniqueID": "c0c24335-74bb-4d3d-803d-abd7fa499b03",
-          "ioValues": [
-            {
-              "name": "Shape 1",
-              "ioValue": {
-                "geometry": "rectangle-530-1000",
-                "dimension": "2D",
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "tags": [],
-                "bom": []
-              }
-            },
-            {
-              "name": "Shape 2",
-              "ioValue": {
-                "geometry": "fuse-fuse-fuse-fuse-fuse-move-rectangle-40-12-0--246-0-move-rectangle-40-12-250-246-0-move-rectangle-40-12--250-246-0-move-rectangle-40-12-0-246-0-move-rectangle-40-12-259--246-0-move-rectangle-40-12--250--246-0",
-                "tags": [],
-                "bom": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "dimension": "2D"
-              }
-            }
-          ],
-          "unionType": "Fusion"
-        },
-        {
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.15384615384615385,
@@ -831,13 +770,19 @@
           "uniqueID": "id-167",
           "name": "Width",
           "type": "number"
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.6460251046025105,
+          "y": 0.3632075471698113,
+          "uniqueID": "id-170"
         }
       ],
       "allConnectors": [
         {
-          "ap2Name": "Shape 1",
+          "ap2Name": "geometry1",
           "ap1ID": "9db9370b-f220-4aa6-abbb-5d9c54f177c5",
-          "ap2ID": "c0c24335-74bb-4d3d-803d-abd7fa499b03"
+          "ap2ID": "id-170"
         },
         {
           "ap2Name": "geometry",
@@ -900,14 +845,9 @@
           "ap2ID": "622fd56d-3c90-4805-96c0-e0d148d63cb1"
         },
         {
-          "ap2Name": "Shape 2",
+          "ap2Name": "geometry2",
           "ap1ID": "622fd56d-3c90-4805-96c0-e0d148d63cb1",
-          "ap2ID": "c0c24335-74bb-4d3d-803d-abd7fa499b03"
-        },
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "c0c24335-74bb-4d3d-803d-abd7fa499b03",
-          "ap2ID": "8da8a303-8a1d-44f3-a849-aaa6445d22b0"
+          "ap2ID": "id-170"
         },
         {
           "ap2Name": "x length",
@@ -918,6 +858,11 @@
           "ap2Name": "y length",
           "ap1ID": "id-167",
           "ap2ID": "9db9370b-f220-4aa6-abbb-5d9c54f177c5"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-170",
+          "ap2ID": "8da8a303-8a1d-44f3-a849-aaa6445d22b0"
         }
       ],
       "fileTypeVersion": 1
