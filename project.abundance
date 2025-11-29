@@ -370,7 +370,7 @@
           "ioValues": [
             {
               "name": "File Type",
-              "ioValue": "STL"
+              "ioValue": "SVG"
             },
             {
               "name": "Resolution (dpi)",
@@ -381,7 +381,7 @@
               "ioValue": "side"
             }
           ],
-          "type": null,
+          "type": "SVG",
           "resolution": 96,
           "importIndex": 0,
           "partName": "side"
