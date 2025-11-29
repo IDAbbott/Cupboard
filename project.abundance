@@ -363,8 +363,8 @@
         },
         {
           "atomType": "Export",
-          "x": 0.73997296079315,
-          "y": 0.5115864527629234,
+          "x": 0.7917981072555205,
+          "y": 0.42780748663101603,
           "uniqueID": "id-446",
           "ioValues": [
             {
@@ -384,6 +384,37 @@
           "resolution": 96,
           "importIndex": 0,
           "partName": "side"
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.757999098693105,
+          "y": 0.7593582887700535,
+          "uniqueID": "id-451",
+          "ioValues": [
+            {
+              "name": "Tool Size",
+              "ioValue": 6.35
+            },
+            {
+              "name": "Passes",
+              "ioValue": 2,
+              "currentEquation": "2"
+            },
+            {
+              "name": "Speed",
+              "ioValue": 1500
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 0
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "side"
+            }
+          ],
+          "partName": "side",
+          "sortDirection": "Left"
         }
       ],
       "allConnectors": [
@@ -416,6 +447,11 @@
           "ap2Name": "geometry",
           "ap1ID": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55",
           "ap2ID": "id-446"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55",
+          "ap2ID": "id-451"
         },
         {
           "ap2Name": "geometry2",
@@ -645,8 +681,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.6359832635983264,
-          "y": 0.6979695431472082,
+          "x": 0.5984677782785038,
+          "y": 0.6951871657754011,
           "uniqueID": "id-248",
           "ioValues": [
             {
@@ -697,8 +733,8 @@
         },
         {
           "atomType": "Difference",
-          "x": 0.7963046417305093,
-          "y": 0.42424242424242425,
+          "x": 0.7124831004957188,
+          "y": 0.36363636363636365,
           "uniqueID": "id-279"
         },
         {
@@ -734,6 +770,61 @@
             }
           ],
           "currentEquation": "x / 2"
+        },
+        {
+          "atomType": "Export",
+          "x": 0.765209553853087,
+          "y": 0.5418894830659536,
+          "uniqueID": "id-459",
+          "ioValues": [
+            {
+              "name": "File Type",
+              "ioValue": "STL"
+            },
+            {
+              "name": "Resolution (dpi)",
+              "ioValue": 96
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "back"
+            }
+          ],
+          "type": null,
+          "resolution": 96,
+          "importIndex": 0,
+          "partName": "back"
+        },
+        {
+          "atomType": "Gcode",
+          "x": 0.7431275349256421,
+          "y": 0.768270944741533,
+          "uniqueID": "id-464",
+          "ioValues": [
+            {
+              "name": "Tool Size",
+              "ioValue": 6.35
+            },
+            {
+              "name": "Passes",
+              "ioValue": 2,
+              "currentEquation": "2"
+            },
+            {
+              "name": "Speed",
+              "ioValue": 1500
+            },
+            {
+              "name": "Cut Through",
+              "ioValue": 0
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "back"
+            }
+          ],
+          "partName": "back",
+          "sortDirection": "Left"
         }
       ],
       "allConnectors": [
@@ -806,6 +897,16 @@
           "ap2Name": "number or geometry",
           "ap1ID": "id-279",
           "ap2ID": "8da8a303-8a1d-44f3-a849-aaa6445d22b0"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-279",
+          "ap2ID": "id-459"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-279",
+          "ap2ID": "id-464"
         },
         {
           "ap2Name": "x",
