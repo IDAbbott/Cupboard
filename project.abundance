@@ -157,10 +157,6 @@
         },
         {
           "name": "Thickness",
-          "ioValue": 10
-        },
-        {
-          "name": "Thickness (1)",
           "ioValue": 12
         }
       ],
@@ -196,7 +192,7 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 12
+              "ioValue": 10
             },
             {
               "name": "y length",
@@ -220,7 +216,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 5
+              "ioValue": 6
             }
           ]
         },
@@ -240,7 +236,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": 5
+              "ioValue": 6
             }
           ]
         },
@@ -252,8 +248,8 @@
         },
         {
           "atomType": "Assembly",
-          "x": 0.599163179916318,
-          "y": 0.6226415094339623,
+          "x": 0.6002703920684994,
+          "y": 0.6256684491978609,
           "uniqueID": "18c6805b-78fa-44d4-946e-8ec6c8f36e0f",
           "ioValues": [
             {
@@ -284,8 +280,8 @@
         },
         {
           "atomType": "Equation",
-          "x": 0.2175732217573222,
-          "y": 0.25888324873096447,
+          "x": 0.21586300135196032,
+          "y": 0.3083778966131907,
           "uniqueID": "id-221",
           "name": "x / 2 -  y",
           "ioValues": [
@@ -302,8 +298,8 @@
         },
         {
           "atomType": "Equation",
-          "x": 0.22938260477692654,
-          "y": 0.47593582887700536,
+          "x": 0.21631365479945922,
+          "y": 0.44385026737967914,
           "uniqueID": "id-228",
           "name": "-x / 2 + y",
           "ioValues": [
@@ -331,14 +327,28 @@
           ]
         },
         {
+          "atomType": "Equation",
+          "x": 0.17620549797205948,
+          "y": 0.5811051693404634,
+          "uniqueID": "id-286",
+          "name": "x / 2",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 12
+            }
+          ],
+          "currentEquation": "x / 2"
+        },
+        {
           "atomType": "Extrude",
-          "x": 0.6426778242677824,
-          "y": 0.40355329949238583,
-          "uniqueID": "id-241",
+          "x": 0.2586750788643533,
+          "y": 0.8074866310160427,
+          "uniqueID": "id-430",
           "ioValues": [
             {
               "name": "height",
-              "ioValue": 5
+              "ioValue": 12
             }
           ]
         },
@@ -346,43 +356,9 @@
           "atomType": "Input",
           "x": 0.025384615384615384,
           "y": 0.3076923076923077,
-          "uniqueID": "id-283",
+          "uniqueID": "id-434",
           "name": "Thickness",
           "type": "number"
-        },
-        {
-          "atomType": "Equation",
-          "x": 0.16569037656903765,
-          "y": 0.467005076142132,
-          "uniqueID": "id-286",
-          "name": "x / 2",
-          "ioValues": [
-            {
-              "name": "x",
-              "ioValue": 10
-            }
-          ],
-          "currentEquation": "x / 2"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.38461538461538464,
-          "uniqueID": "id-296",
-          "name": "Thickness (1)",
-          "type": "number"
-        },
-        {
-          "atomType": "Extrude",
-          "x": 0.21406038756196483,
-          "y": 0.8110516934046346,
-          "uniqueID": "id-430",
-          "ioValues": [
-            {
-              "name": "height",
-              "ioValue": 10
-            }
-          ]
         }
       ],
       "allConnectors": [
@@ -390,6 +366,11 @@
           "ap2Name": "geometry",
           "ap1ID": "8af90a62-389b-4be3-a31a-7fd93bad9420",
           "ap2ID": "id-237"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "056842cb-12bb-4c75-b731-881c81b544c7",
+          "ap2ID": "id-430"
         },
         {
           "ap2Name": "Shape 1",
@@ -407,9 +388,9 @@
           "ap2ID": "d2a9499f-ddc0-404f-84c4-7b962e2b3d6d"
         },
         {
-          "ap2Name": "geometry",
+          "ap2Name": "geometry2",
           "ap1ID": "18c6805b-78fa-44d4-946e-8ec6c8f36e0f",
-          "ap2ID": "id-241"
+          "ap2ID": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55"
         },
         {
           "ap2Name": "x length",
@@ -452,16 +433,6 @@
           "ap2ID": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55"
         },
         {
-          "ap2Name": "geometry2",
-          "ap1ID": "id-241",
-          "ap2ID": "6d82787a-a2f4-49ab-90dd-80fcb3c59c55"
-        },
-        {
-          "ap2Name": "x",
-          "ap1ID": "id-283",
-          "ap2ID": "id-286"
-        },
-        {
           "ap2Name": "zDist",
           "ap1ID": "id-286",
           "ap2ID": "e5890891-c6c0-4e72-be44-57fc3fcadffb"
@@ -472,19 +443,34 @@
           "ap2ID": "6660d33e-72f6-4b07-96cb-e601efc5129f"
         },
         {
-          "ap2Name": "y",
-          "ap1ID": "id-296",
-          "ap2ID": "id-228"
+          "ap2Name": "geometry",
+          "ap1ID": "id-430",
+          "ap2ID": "6660d33e-72f6-4b07-96cb-e601efc5129f"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-430",
+          "ap2ID": "e5890891-c6c0-4e72-be44-57fc3fcadffb"
         },
         {
           "ap2Name": "y",
-          "ap1ID": "id-296",
+          "ap1ID": "id-434",
           "ap2ID": "id-221"
         },
         {
-          "ap2Name": "x length",
-          "ap1ID": "id-296",
-          "ap2ID": "056842cb-12bb-4c75-b731-881c81b544c7"
+          "ap2Name": "y",
+          "ap1ID": "id-434",
+          "ap2ID": "id-228"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-434",
+          "ap2ID": "id-286"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-434",
+          "ap2ID": "id-430"
         }
       ],
       "fileTypeVersion": 1
@@ -892,7 +878,7 @@
       "ap2ID": "a0b05029-765d-4972-9ac3-8890a40908b2"
     },
     {
-      "ap2Name": "Thickness (1)",
+      "ap2Name": "Thickness",
       "ap1ID": "id-290",
       "ap2ID": "00c3ad52-2a7a-4e79-a232-b8563ee33332"
     },
