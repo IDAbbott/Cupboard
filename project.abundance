@@ -7,11 +7,13 @@
   "ioValues": [
     {
       "name": "Height",
-      "ioValue": 530
+      "ioValue": 530,
+      "currentEquation": "530"
     },
     {
       "name": "Width",
-      "ioValue": 1000
+      "ioValue": 1000,
+      "currentEquation": "1000"
     },
     {
       "name": "Depth",
@@ -685,8 +687,8 @@
         },
         {
           "atomType": "Difference",
-          "x": 0.6895927601809955,
-          "y": 0.5375,
+          "x": 0.6972850678733031,
+          "y": 0.55,
           "uniqueID": "id-279"
         },
         {
@@ -1132,11 +1134,11 @@
               "ioValues": [
                 {
                   "name": "xDist",
-                  "ioValue": -260
+                  "ioValue": 0
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0
+                  "ioValue": -495
                 },
                 {
                   "name": "zDist",
@@ -1146,17 +1148,17 @@
             },
             {
               "atomType": "Move",
-              "x": 0.5753393665158372,
-              "y": 0.2541666666666667,
+              "x": 0.5819004524886878,
+              "y": 0.24166666666666664,
               "uniqueID": "id-954",
               "ioValues": [
                 {
                   "name": "xDist",
-                  "ioValue": 260
+                  "ioValue": 0
                 },
                 {
                   "name": "yDist",
-                  "ioValue": 0
+                  "ioValue": 495
                 },
                 {
                   "name": "zDist",
@@ -1166,8 +1168,8 @@
             },
             {
               "atomType": "Assembly",
-              "x": 0.7187782805429865,
-              "y": 0.42291666666666666,
+              "x": 0.7235294117647059,
+              "y": 0.43333333333333335,
               "uniqueID": "id-955",
               "ioValues": [
                 {
@@ -1189,7 +1191,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 530
+                  "ioValue": 1000
                 },
                 {
                   "name": "y",
@@ -1207,7 +1209,7 @@
               "ioValues": [
                 {
                   "name": "x",
-                  "ioValue": 530
+                  "ioValue": 1000
                 },
                 {
                   "name": "y",
@@ -1289,12 +1291,12 @@
               "ap2ID": "id-950"
             },
             {
-              "ap2Name": "xDist",
+              "ap2Name": "yDist",
               "ap1ID": "id-956",
               "ap2ID": "id-953"
             },
             {
-              "ap2Name": "xDist",
+              "ap2Name": "yDist",
               "ap1ID": "id-957",
               "ap2ID": "id-954"
             },
@@ -1337,6 +1339,16 @@
               "ap2Name": "x length",
               "ap1ID": "id-988",
               "ap2ID": "id-952"
+            },
+            {
+              "ap2Name": "x",
+              "ap1ID": "id-991",
+              "ap2ID": "id-957"
+            },
+            {
+              "ap2Name": "x",
+              "ap1ID": "id-991",
+              "ap2ID": "id-956"
             },
             {
               "ap2Name": "y length",
