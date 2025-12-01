@@ -754,6 +754,14 @@
             {
               "name": "Shape 2",
               "ioValue": null
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 4",
+              "ioValue": null
             }
           ]
         },
@@ -777,8 +785,8 @@
         },
         {
           "atomType": "Equation",
-          "x": 0.2583710407239819,
-          "y": 0.44166666666666665,
+          "x": 0.26380090497737557,
+          "y": 0.39166666666666666,
           "uniqueID": "id-250",
           "name": "x / 2 - y",
           "ioValues": [
@@ -965,8 +973,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.316289592760181,
-          "y": 0.8999999999999999,
+          "x": 0.34660633484162895,
+          "y": 0.8958333333333334,
           "uniqueID": "id-679",
           "ioValues": [
             {
@@ -985,8 +993,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.4108597285067873,
-          "y": 0.9229166666666666,
+          "x": 0.43936651583710407,
+          "y": 0.8395833333333333,
           "uniqueID": "id-685",
           "ioValues": [
             {
@@ -1002,6 +1010,56 @@
               "ioValue": 0
             }
           ]
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.27647058823529413,
+          "y": 0.06458333333333333,
+          "uniqueID": "id-691",
+          "name": "x / 2 - y",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 1000
+            },
+            {
+              "name": "y",
+              "ioValue": 500
+            }
+          ],
+          "currentEquation": "x / 2 - y"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.13755656108597286,
+          "y": 0.4354166666666667,
+          "uniqueID": "id-695",
+          "name": "x / 2",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 1000
+            }
+          ],
+          "currentEquation": "x / 2"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.27918552036199096,
+          "y": 0.22083333333333333,
+          "uniqueID": "id-698",
+          "name": "-x / 2 + y",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 1000
+            },
+            {
+              "name": "y",
+              "ioValue": 500
+            }
+          ],
+          "currentEquation": "-x / 2 + y"
         }
       ],
       "allConnectors": [
@@ -1049,6 +1107,21 @@
           "ap2Name": "y length",
           "ap1ID": "id-167",
           "ap2ID": "id-671"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-167",
+          "ap2ID": "id-691"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-167",
+          "ap2ID": "id-695"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-167",
+          "ap2ID": "id-698"
         },
         {
           "ap2Name": "geometry1",
@@ -1188,6 +1261,36 @@
         {
           "ap2Name": "geometry",
           "ap1ID": "id-675",
+          "ap2ID": "id-685"
+        },
+        {
+          "ap2Name": "Shape 4",
+          "ap1ID": "id-679",
+          "ap2ID": "id-248"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-685",
+          "ap2ID": "id-248"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-691",
+          "ap2ID": "id-679"
+        },
+        {
+          "ap2Name": "y",
+          "ap1ID": "id-695",
+          "ap2ID": "id-691"
+        },
+        {
+          "ap2Name": "y",
+          "ap1ID": "id-695",
+          "ap2ID": "id-698"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-698",
           "ap2ID": "id-685"
         }
       ],
