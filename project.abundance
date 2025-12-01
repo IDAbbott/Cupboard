@@ -865,8 +865,8 @@
             },
             {
               "atomType": "Move",
-              "x": 0.5253393665158371,
-              "y": 0.3041666666666667,
+              "x": 0.5289592760180996,
+              "y": 0.31666666666666665,
               "uniqueID": "id-905",
               "ioValues": [
                 {
@@ -1053,6 +1053,16 @@
               "ap2ID": "id-908"
             },
             {
+              "ap2Name": "x",
+              "ap1ID": "id-939",
+              "ap2ID": "id-908"
+            },
+            {
+              "ap2Name": "x",
+              "ap1ID": "id-939",
+              "ap2ID": "id-907"
+            },
+            {
               "ap2Name": "y length",
               "ap1ID": "id-942",
               "ap2ID": "id-903"
@@ -1075,7 +1085,7 @@
           "x": 0.1855203619909502,
           "y": 0.7875000000000001,
           "uniqueID": "id-948",
-          "name": "Molecule",
+          "name": "IdentEnd",
           "ioValues": [
             {
               "name": "Height",
@@ -1220,8 +1230,8 @@
             },
             {
               "atomType": "Equation",
-              "x": 0.1993212669683258,
-              "y": 0.59375,
+              "x": 0.2,
+              "y": 0.5770833333333334,
               "uniqueID": "id-959",
               "name": "x / 2",
               "ioValues": [
@@ -1340,6 +1350,22 @@
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Assembly",
+          "x": 0.504524886877828,
+          "y": 0.7,
+          "uniqueID": "id-1203",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -1439,8 +1465,18 @@
           "ap2ID": "id-498"
         },
         {
-          "ap2Name": "geometry2",
+          "ap2Name": "Shape 1",
           "ap1ID": "id-899",
+          "ap2ID": "id-1203"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-948",
+          "ap2ID": "id-1203"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-1203",
           "ap2ID": "id-279"
         }
       ],
